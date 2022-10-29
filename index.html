@@ -18,6 +18,13 @@
           color: white;
           font-size: 60px;
         }
+        .header2 {
+          padding: 150px;
+          text-align: center;
+          background: #23272A;
+          color: white;
+          font-size: 90px;
+        }
         .button {
             background-color: #5865F2;
             border: none;
@@ -34,8 +41,30 @@
         .dText {
           font-family: "Neuwelt";
           src: local("./fonts/NeuweltText-ExtraBold.ttf");
-          color: #5865F2;
-          
+          color: #ffffff;
+        }
+        .disText {
+          font-family: var(--font-headline);
+          src: local('./fonts/Discord.ttf');
+          color: #ffffff;
+          font-weight: 1000;
+          font-style: oblique;
+          font-size: clamp(24px,5vw,44px);
+          line-height: 95%;
+          text-transform: uppercase;
+          text-rendering: geometricPrecision;
+        }
+        #main {
+          border: 1px dotted black;
+          width: 100%;
+          display: flex;
+          align-items: center; /* Vertical align the elements to the center */
+        }
+        h1 {
+          position: left;
+        }
+        button {
+           float: right; /* Push this element to the right */
         }
     </style>
   </head>
@@ -43,56 +72,63 @@
   <body>
     <div>
         <div class="sticky top-0 z-20 header">
-            <header>
-                <h1 class="dText"><span style="font-size: 60px;">[</span> <span style="color: #57F287"><span style="position: relative;top: -4px;">Bracketed</span></span> <span style="font-size: 60px;">]</span><button class="button" href="" style="position: relative;top: -12px; left:350px;">Login with Discord</button></h1>
+            <header style="padding-left: 1%;" id="main">
+                <h1 class="dText" style="color: #ffffff">[ / ]</h1> 
+                <p style="font-size: 40%;">Hello</p>
+                <button class="button" href="" style="text-align: left;">Login with Discord</button>
             </header>
+        </div>
+
+        <div class="header2">
+          <h1 class="dText"><span style="font-size: 160px; color: #5865F2;">[</span> <span style="color: #57F287; position: relative;top: -4px; font-size: 120px;">Bracketed</span> <span style="font-size: 160px; color: #5865F2;">]</span> <span style="color: #5865F2;">[Bot]</span></h1>
         </div>
 
     
         <div>
-            <div class="container">
-                <body style="background-color:#23272A;"></body>
-                <div>
+            <div>
+                <div style="background-color: #5865F2; padding: 5%;">
                   
-                  HELLO
+                  <h2 class="disText">Welcome!</h2>
+                  <p class="dText" style="font-size: 120%;">Welcome to Bracketed!</p>
+                  <p class="dText" style="font-size: 120%;">This is a bot made to remove the fact you need more then one bot to moderate your server, create tickets, play games, create applications of view anything roblox-related. We made this bot to create ease in server moderation and much more!</p>
                 </div>
-              
-                <div class="container">
-                  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-                      <body style="background-color:#141617;"></body>
-                
-                    <div class="col mb-3">
-                      <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Invite</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                      </ul>
-                    </div>
-                
-                    <div class="col mb-3">
-                      <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Commands</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">The Team</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">The Developers</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Our History</a></li>
-                      </ul>
-                    </div>
-                
-                    <div class="col mb-3">
-                      <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">The bot's Timeline</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Other</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Who are we</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">What is this</a></li>
-                      </ul>
-                    </div>
-                  </footer>
+                <div style="background-color:#23272A; ">
+                  <div style="padding: 5%;"> 
+                    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+                  
+                      <div class="col mb-3">
+                        <ul class="nav flex-column">
+                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Invite</a></li>
+                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                        </ul>
+                      </div>
+                  
+                      <div class="col mb-3">
+                        <ul class="nav flex-column">
+                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Commands</a></li>
+                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">The Team</a></li>
+                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">The Developers</a></li>
+                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Our History</a></li>
+                        </ul>
+                      </div>
+                  
+                      <div class="col mb-3">
+                        <ul class="nav flex-column">
+                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">The bot's Timeline</a></li>
+                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Other</a></li>
+                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Who are we</a></li>
+                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">What is this</a></li>
+                        </ul>
+                      </div>
+                    </footer>
+                  </div>
                 </div>
         </div>
     </div>
-
+  </div>
   </body>
 </html>
